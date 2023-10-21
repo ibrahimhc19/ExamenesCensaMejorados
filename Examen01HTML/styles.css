@@ -4,36 +4,125 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Inconsolata', monospace;
-  font-family: 'Poppins', sans-serif;  list-style: none;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
 :root{
-  --bg-color: linear-gradient(217deg, #F1B6E0, rgba(255, 0, 0, 0) 70.71%), 
-							linear-gradient(127deg, #B3B0F8, rgba(0, 255, 0, 0) 70.71%), 
-							linear-gradient(336deg, #8ADDF8, rgba(0, 0, 255, 0) 70.71%);
+  --altura: 7vh;
 }
 body{
-  background-color: #E5E1E1;
-  /* background-color: #E3B341; */
-  /* background-color: #CF4B3B; */
-  /* background: var(--bg-color); */
+  /* background-color: #E5E1E1; */
+  background-color: #eaf2fd;
+  background-color: #edeceeab;
   height: 100vh;
 }
-nav{
-  width: 100%;
-  height: 12vh;
+
+.nav-bar{
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  height: var(--altura);
+  justify-content: space-around;
+  /* box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.1); */
+
 }
 
+.left h1{
+  font-size: 1.5rem;
+  user-select: none;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+
+.list{
+  display: flex;
+  user-select: none;
+  list-style: none;
+}
+
+.list li a{
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 1s;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  padding: 0.4rem 0.8rem;
+}
 
 #pfp{
-  max-width: 50%;
+  max-height: 100%;
   border-radius: 50%;
-  border: 5px solid white;
+  border: 3px solid white;
   transition: all 1s;
 }
 #pfp:hover{
   transform: scale(.8);
+} 
+
+.hero{
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  height: 93vh;
+}
+
+.hero div{
+  /* width: 40vw; */
+  display: flex;
+  height: 300px;
+}
+
+.presentacion{
+  flex-direction: column;
+  width: 50vw;
+  justify-content: center;
+  padding: 2rem;
+}
+.nombre{
+  font-size: 2.5rem;
+}
+
+.presentacion p{
+  margin: .2rem 0;
+  font-size: 1.4rem;
+}
+
+main{
+  margin: 0 auto;
+  background-color: #cce0fda2;
+  display: flex;
+}
+
+.evaluacion{
+  width: 80vw;
+  display: flex;
+  align-items: baseline;
+  /* justify-content: center; */
+  margin: 0 auto;
+}
+
+.acerca{
+  width: 30vw;
+  padding: 2rem;
+  text-align: center;
+}
+.acerca p, .criterios{
+  text-indent: 2rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.asignacion{
+  width: 50vw;
+  padding: 2rem;
+  text-align: justify;
+}
+
+.asignacion h2{
+  text-align: center;
+}
+
+ol li{
+  margin-left: 2.5rem;
 }
