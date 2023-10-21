@@ -92,7 +92,7 @@ body{
 main{
   margin: 0 auto;
   background-color: #cce0fda2;
-  display: flex;
+  /* display: flex; */
 }
 
 .evaluacion{
@@ -125,4 +125,11 @@ main{
 
 ol li{
   margin-left: 2.5rem;
+}
+.asignacion h2, p{
+  margin: 1rem 0;
+}
+
+.prueba{
+  
 }
