@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 *{
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Poppins', sans-serif;
+  padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
+
 :root{
   --altura: 7vh;
 }
+
 body{
-  /* background-color: #E5E1E1; */
-  background-color: #eaf2fd;
-  background-color: #edeceeab;
   height: 100vh;
+  background-color: #edeceeab;
+  /* background-color: #E5E1E1; */
+  /* background-color: #eaf2fd; */
 }
 
 .nav-bar{
@@ -50,35 +53,38 @@ body{
 }
 
 #pfp{
+  max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-  border: 3px solid white;
   transition: all 1s;
+  border: 3px solid white;
 }
 #pfp:hover{
   transform: scale(.8);
 } 
 
 .hero{
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
   height: 93vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.hero div{
-  /* width: 40vw; */
-  display: flex;
+.imagenHero{
+  width: 40vw;
   height: 300px;
+  align-self: center;
+}
+.hero div{
+  display: flex;
+  justify-content: center;
 }
 
 .presentacion{
-  flex-direction: column;
-  width: 50vw;
-  justify-content: center;
+  width: 40vw;
   padding: 2rem;
+  flex-direction: column;
 }
 .nombre{
   font-size: 2.5rem;
@@ -92,19 +98,18 @@ body{
 main{
   margin: 0 auto;
   background-color: #cce0fda2;
-  /* display: flex; */
 }
 
 .evaluacion{
   width: 80vw;
   display: flex;
-  align-items: baseline;
-  /* justify-content: center; */
   margin: 0 auto;
+  align-items: baseline;
+
 }
 
 .acerca{
-  width: 30vw;
+  width: 40vw;
   padding: 2rem;
   text-align: center;
 }
@@ -114,7 +119,7 @@ main{
   line-height: 1.5rem;
 }
 .asignacion{
-  width: 50vw;
+  width: 40vw;
   padding: 2rem;
   text-align: justify;
 }
@@ -131,5 +136,30 @@ ol li{
 }
 
 .prueba{
-  
+  display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.prueba h1,h2,h3,p {
+  margin: 1rem 0;
+}
+
+.prueba h1{
+  background-color: rgba(162, 0, 255, 0.404);
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  padding: 2rem 0;
+}
+.prueba div{
+  width: 80vw;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.inicio, .coursera{
+  width: 40vw;
 }
