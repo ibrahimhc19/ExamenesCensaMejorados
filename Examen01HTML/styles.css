@@ -25,7 +25,8 @@ body{
   align-items: center;
   height: var(--altura);
   justify-content: space-around;
-  /* box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.1); */
+  background-color: #cce0fda2;
+  box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.1);
 
 }
 
@@ -127,7 +128,9 @@ main{
 .asignacion h2{
   text-align: center;
 }
-
+.asignacion li{
+  margin-bottom: .8rem;
+}
 ol li{
   margin-left: 2.5rem;
 }
@@ -161,5 +164,62 @@ ol li{
 }
 
 .inicio, .coursera{
-  width: 40vw;
+  width: 80vw;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .evaluacion{
+    display: flex;
+    flex-direction: column;
+  }
+  .acerca{
+    width: 80vw;
+    padding-bottom: 0;
+  }
+  .asignacion{
+    width: 80vw;
+    padding-top: 0;
+  }
+  video{
+    width: 80vw;
+  }
+  main p{
+    font-size: 1.3rem;
+  }
+  .hero div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .presentacion{
+    width: 90vw;
+    text-align: center;
+    padding: 0;
+  }
+  #pfp{
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+  }
+  .prueba__alura--parrafo, .prueba__coursera--parrafo{
+    text-align: justify;
+  }
+  .nombre{
+    margin-bottom: 1rem;
+  }
+  .prueba div{
+    padding: 0 2rem;
+  }
+  .prueba__titulo{
+    width: 80vw;
+  }
+  .list{
+    display: none;
+  }
+  .nav-bar{
+    justify-content: center;
+  }
+
 }
