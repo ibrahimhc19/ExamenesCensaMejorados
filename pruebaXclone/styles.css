@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Poppins", sans-serif;
-  font-family: "Roboto", sans-serif; */
   font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   color: black;
@@ -16,51 +14,64 @@ body {
 }
 a{
   color: #368dc3;
+  font-size: 13px;
 }
 
 .portada {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   background: url(../Examen01HTML/media/pexels-markus-spiske-4439901.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   z-index: -1;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  /* margin-bottom: 10px; */
+  position: relative;
 }
 
 .perfil {
   width: 100%;
-  height: 30vh;
-  /* background-color: aquamarine; */
+  /* height: 35vh; */
+  height: auto;
   z-index: -1;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
   margin-bottom: 3px;
-  /* position: relative; */
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .perfil__titulo{
-  font-size: 1.5rem;
-  margin-top: 8vh;
+  font-size: 1.2rem;
+  margin-top: 1vh;
+}
+button{
+  align-self: flex-end;
+  padding: .3rem .6rem;
+  border-radius: 3rem;
+  border: 1px solid #53646e5e;
+  background: transparent;
+  font-weight: bolder;
+  font-size: .8rem;
 }
 .imagenPerfil {
-  height: 16vh;
+  height: 10vh;
   position: absolute;
-  top: 13vh;
+  top: 10vh;
   z-index: 1;
   border-radius: 50%;
   border: 5px solid #ffffff;
-  left: 5vw;
 }
 
 .perfil__rol{
   color: #53646e;
   font-size: 1rem;
+  margin-bottom: 1vh;
 }
-
+.perfil__links{
+  margin-bottom: 1vh;
+}
 .nav-bar {
   height: 5vh;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
