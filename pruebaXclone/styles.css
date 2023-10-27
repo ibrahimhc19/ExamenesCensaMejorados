@@ -3,83 +3,89 @@
 * {
   margin: 0;
   padding: 0;
+  color: black;
+  text-decoration: none;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  text-decoration: none;
-  color: black;
 }
 
 body {
   background-color: #ffffff;
 }
-a{
-  color: #368dc3;
-  font-size: 13px;
-}
 
-.portada {
+.banner {
   width: 100%;
+  z-index: -1;
   height: 15vh;
-  background: url(../Examen01HTML/media/pexels-markus-spiske-4439901.jpg);
-  background-repeat: no-repeat;
+  position: relative;
   background-size: cover;
   background-attachment: fixed;
-  z-index: -1;
+  background-repeat: no-repeat;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  position: relative;
+  background: url(../Examen01HTML/media/pexels-markus-spiske-4439901.jpg);
 }
 
-.perfil {
+.profile {
   width: 100%;
-  /* height: 35vh; */
-  height: auto;
   z-index: -1;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 3px;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
+  height: auto;
   display: flex;
+  padding: 1rem;
+  margin-bottom: 3px;
   flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
 }
 
-.perfil__titulo{
-  font-size: 1.2rem;
+.profile__title {
   margin-top: 1vh;
+  font-size: 1.2rem;
 }
-button{
-  align-self: flex-end;
-  padding: .3rem .6rem;
+.profile__button {
+  cursor: pointer;
+  font-size: 0.8rem;
   border-radius: 3rem;
-  border: 1px solid #53646e5e;
-  background: transparent;
   font-weight: bolder;
-  font-size: .8rem;
+  align-self: flex-end;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border: 1px solid #53646e5e;
 }
-.imagenPerfil {
-  height: 10vh;
-  position: absolute;
+.profile__image {
   top: 10vh;
   z-index: 1;
+  height: 10vh;
   border-radius: 50%;
+  position: absolute;
   border: 5px solid #ffffff;
 }
 
-.perfil__rol{
-  color: #53646e;
+.profile__role {
   font-size: 1rem;
+  color: #53646e;
   margin-bottom: 1vh;
 }
-.perfil__links{
+.profile__links {
   margin-bottom: 1vh;
 }
-.nav-bar {
+
+.profile__links a{
+  font-size: 13px;
+  color: #368dc3;
+}
+
+.profile__bio {
+  font-weight: 100;
+}
+
+/* .navbar {
   height: 5vh;
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
   margin-bottom: 3px;
-}
+} */
 
 @media screen and (max-width: 767px) {
-  .nav-bar {
+  .navbar {
     display: none;
   }
 }
