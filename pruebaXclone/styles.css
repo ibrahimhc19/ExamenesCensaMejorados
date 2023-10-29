@@ -30,6 +30,7 @@ body {
   z-index: -1;
   height: auto;
   display: flex;
+  position: relative;
   padding: 1rem;
   margin-bottom: 3px;
   flex-direction: column;
@@ -52,7 +53,7 @@ body {
   border: 1px solid #53646e5e;
 }
 .profile__image {
-  top: 10vh;
+  top: -5vh;
   z-index: 1;
   height: 10vh;
   border-radius: 50%;
@@ -79,14 +80,3 @@ body {
   font-size: 13px;
 }
 
-/* .navbar {
-  height: 5vh;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  margin-bottom: 3px;
-} */
-
-@media screen and (max-width: 767px) {
-  .navbar {
-    display: none;
-  }
-}
