@@ -9,11 +9,32 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-body {
-  background-color: #ffffff;
+:root {
+  --border: 1rem;
+  --shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.205);
+  --bgc-elements: #ffffff;
+  --mb-elements: 1vh;
 }
 
-.banner {
+body {
+  width: 90vw;
+  display: flex;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+}
+
+.container__fixed {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* .card {
+  margin-right: 1rem;
+} */
+
+.card__banner {
   width: 100%;
   z-index: -1;
   height: 15vh;
@@ -21,28 +42,33 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
-  background: url(../media/pexels-markus-spiske-4439901.jpg);
+  display: contents; /*quitar en movil*/
+  /* background: url(../media/pexels-markus-spiske-4439901.jpg); */
 }
 
-.profile {
+.card__profile {
   width: 100%;
   z-index: -1;
   height: auto;
   display: flex;
-  position: relative;
   padding: 1rem;
-  margin-bottom: 3px;
+  position: relative;
   flex-direction: column;
-  background-color: #ffffff;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  background-color: var(--bgc-elements);
+  border-radius: var(--border);
 }
 
-.profile__title {
-  margin-top: 1vh;
-  font-size: 1.2rem;
+.card__image {
+  top: -7vh;
+  z-index: 1;
+  height: 14vh;
+  border-radius: 50%;
+  position: absolute;
+  border: 5px solid var(--bgc-elements);
 }
-.profile__button {
+
+.card__button {
   cursor: pointer;
   font-size: 0.8rem;
   border-radius: 3rem;
@@ -52,31 +78,67 @@ body {
   background: transparent;
   border: 1px solid #53646e5e;
 }
-.profile__image {
-  top: -5vh;
-  z-index: 1;
-  height: 10vh;
-  border-radius: 50%;
-  position: absolute;
-  border: 5px solid #ffffff;
+
+.card__title {
+  margin-top: 3vh;
+  font-size: 1.3rem;
 }
 
-.profile__role {
+.card__role {
   font-size: 1rem;
   color: #53646e;
-  margin-bottom: 1vh;
-}
-.profile__links {
-  margin-bottom: 1vh;
+  margin-bottom: var(--mb-elements);
 }
 
-.profile__links a{
+.card__links {
+  margin-bottom: var(--mb-elements);
+}
+
+.card__links a {
   font-size: 13px;
+  /* font-size: 1rem; */
   color: #368dc3;
 }
 
-.profile__bio {
+.card__bio {
   font-weight: 100;
-  font-size: 13px;
+  /* font-size: 13px; */
+  font-size: 1rem;
 }
 
+.container__scrollable {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  overflow: auto;
+  /* align-items: center; */
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.feed {
+  height: auto;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 1rem;
+  margin: 2rem 2rem 0;
+}
+
+.feed__post {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.feed__post--user-image {
+  border-radius: 50%;
+  height: 5vh;
+  margin-right: 1rem;
+}
+.feed__post--caption {
+  margin-bottom: 0.5rem;
+}
+
+.feed__post--thumbnail {
+  border-radius: var(--border);
+}
