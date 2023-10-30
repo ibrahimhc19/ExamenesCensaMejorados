@@ -11,9 +11,9 @@
 
 :root {
   --border: 1rem;
-  --shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.205);
-  --bgc-elements: #ffffff;
   --mb-elements: 1vh;
+  --bgc-elements: #ffffff;
+  --shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.205);
 }
 
 body {
@@ -110,7 +110,7 @@ body {
   width: 60%;
   height: 100vh;
   display: flex;
-  overflow: auto;
+  /* overflow: auto; */
   /* align-items: center; */
   flex-direction: column;
   /* justify-content: center; */
@@ -121,7 +121,7 @@ body {
   padding: 1rem;
   box-shadow: var(--shadow);
   border-radius: 1rem;
-  margin: 2rem 2rem 0;
+  margin: 1rem 2rem 0;
 }
 
 .feed__post {
@@ -141,4 +141,30 @@ body {
 
 .feed__post--thumbnail {
   border-radius: var(--border);
+}
+
+@media screen and (max-width:639px) {
+  body{
+    flex-direction: column;
+  }
+  .container__fixed, .container__scrollable{
+    width: auto;
+  }
+  .card__banner{
+    display: block;
+      background: url(../media/pexels-markus-spiske-4439901.jpg);
+  }
+
+}
+
+@media (min-width: 640px){
+  .container__scrollable{
+    overflow: auto;
+  }
+}
+@media (min-width: 640px) and (max-width: 793px){
+.card__links{
+  display: flex;
+  flex-direction: column;
+}
 }

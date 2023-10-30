@@ -11,8 +11,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="../media/ms-icon-32x32.png">
   <link rel="apple-touch-icon" sizes="60x60" href="../media/apple-icon-60x60.png">
-  <!-- Hojas de estilos -->
+  <!-- Stylesheets and icons -->
   <link rel="stylesheet" href="./styles.css" />
+  <script src="https://kit.fontawesome.com/4086eabc67.js" crossorigin="anonymous"></script>
   <title>Ibrahim Calzadilla | Frontend Developer</title>
 </head>
 
@@ -25,8 +26,8 @@
       <div class="card__profile">
         <img class="card__image" src="../media/pfp.png" alt="profile image" />
         <button class="card__button" type="button">Check my CV</button>
-        <h1 class="card__title">Ibrahim Calzadilla Rada</h1>
-        <h2 class="card__role">Jr. Frontend Developer</h2>
+        <h1 class="card__title">Ibrahim Calzadilla Rada</h1>        
+        <h2 class="card__role"><i class="fa-solid fa-suitcase" style="color: #53646e;"></i> Jr. Frontend Developer</h2>
         <div class="card__languages">
           <small>HTML</small>
           <small>CSS</small>
@@ -34,9 +35,9 @@
           <small>Bootstrap</small>
           <small>React</small>
         </div>
-        <div class="card__links">
-          <a href="#">github.com/ibrahimhc19</a>
-          <a href="#" class="card__email">ibrahimhc19@gmail.com</a>
+        <div class="card__links">          
+          <a href="#"><i class="fa-brands fa-github" style="color: #368dc3;"></i> ibrahimhc19</a>
+          <a href="#" class="card__email"><i class="fa-solid fa-envelope" style="color: #368dc3;"></i> ibrahimhc19@gmail.com</a>
         </div>
         <p class="card__bio">
           Web Development Technician Degree student, actively working towards a career as a Frontend Developer.
@@ -52,14 +53,23 @@
 
   <div class="container__scrollable">
     <div class="feed">
+      <nav>
+
+        <ul style="display: flex; justify-content: space-around; list-style: none;">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Content</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">CV</a></li>
+        </ul>
+
+      </nav>
+    </div>
+    <div class="feed">
       <div class="feed__post">
         <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image">
 
         <div class="post">
-          <p class="feed__post--caption">Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.
-            Mollitia quae nostrum blanditiis
-            eligendi? Odit autem dolorem tempora facilis.</p>
+          <p class="feed__post--caption">Hello, my name is Ibrahim Calzadilla. I specialize in web solutions development. I am passionate about software development, and I am currently studying at the Centro de Sistemas de Antioquia (CENSA).</p>
           <div class="feed__post--thumbnail">
             <img src="../media/pexels-markus-spiske-4439901.jpg" alt="post"
               style="max-width: 100%; border-radius: inherit;">
@@ -73,10 +83,7 @@
         <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image">
 
         <div class="post">
-          <p class="feed__post--caption">Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.
-            Mollitia quae nostrum blanditiis
-            eligendi? Odit autem dolorem tempora facilis.</p>
+          <p class="feed__post--caption">Hello, my name is Ibrahim Calzadilla. I specialize in web solutions development. I am passionate about software development, and I am currently studying at the Centro de Sistemas de Antioquia (CENSA).</p>
           <div class="feed__post--thumbnail">
             <img src="../media/pexels-markus-spiske-4439901.jpg" alt="post"
               style="max-width: 100%; border-radius: inherit;">
@@ -90,10 +97,7 @@
         <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image">
 
         <div class="post">
-          <p class="feed__post--caption">Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.
-            Mollitia quae nostrum blanditiis
-            eligendi? Odit autem dolorem tempora facilis.</p>
+          <p class="feed__post--caption">Hello, my name is Ibrahim Calzadilla. I specialize in web solutions development. I am passionate about software development, and I am currently studying at the Centro de Sistemas de Antioquia (CENSA).</p>
           <div class="feed__post--thumbnail">
             <img src="../media/pexels-markus-spiske-4439901.jpg" alt="post"
               style="max-width: 100%; border-radius: inherit;">
@@ -102,23 +106,9 @@
         
       </div>
     </div>
-    <div class="feed">
-      <div class="feed__post">
-        <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image">
-
-        <div class="post">
-          <p class="feed__post--caption">Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.
-            Mollitia quae nostrum blanditiis
-            eligendi? Odit autem dolorem tempora facilis.</p>
-          <div class="feed__post--thumbnail">
-            <img src="../media/pexels-markus-spiske-4439901.jpg" alt="post"
-              style="max-width: 100%; border-radius: inherit;">
-          </div>
-        </div>
-        
-      </div>
-    </div>
+    
+    
+    
   </div>
 </body>
 
