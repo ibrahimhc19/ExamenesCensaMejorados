@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ibrahim Calzadilla" />
+    <meta
+      name="description"
+      content="Ibrahim Calzadilla's Frontend Development Portfolio"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../media/ms-icon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../media/apple-icon-60x60.png"
+    />
+    <!-- Stylesheets and icons -->
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4086eabc67.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ibrahim Calzadilla | Frontend Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="author" content="Ibrahim Calzadilla" />
-  <meta name="description" content="Ibrahim Calzadilla's Frontend Development Portfolio" />
-  <meta name="keywords" content="HTML, CSS, JavaScript, React" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="../media/ms-icon-32x32.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="../media/apple-icon-60x60.png" />
-  <!-- Stylesheets and icons -->
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="https://kit.fontawesome.com/4086eabc67.js" crossorigin="anonymous"></script>
-  <title>Ibrahim Calzadilla | Frontend Developer</title>
-</head>
-<style>
-  .card, .feed{
-    margin: 1rem;
-  }
-</style>
-<body style="background-color: #368dc33f; background: linear-gradient(217deg, #F1B6E0, rgba(255, 0, 0, 0) 70.71%), 
-linear-gradient(127deg, #B3B0F8, rgba(0, 255, 0, 0) 70.71%), 
-linear-gradient(336deg, #8ADDF8, rgba(0, 0, 255, 0) 70.71%);">
 
-      <div class="feed" style="position: fixed;
+  <style>
+    .card,
+    .feed {
+      margin: 1rem;
+    }
+
+    body {
+      background-color: #368dc33f;
+      background: linear-gradient(217deg, #f1b6e0, rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, #b3b0f8, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #8addf8, rgba(0, 0, 255, 0) 70.71%);
+    }
+    .card__links i {
+      color: #368dc3;
+    }
+    .card__role i {
+      color: #53646e;
+    }
+    ul li {
+      margin-left: 2rem;
+    }
+
+    ul {
+      text-align: justify;
+    }
+
+    .feed__post {
+      padding-right: 1rem;
+      text-align: justify;
+    }
+    ol li {
+      margin: 0.5rem 2rem;
+    }
+    
+  </style>
+
+  <body>
+    <!-- <div class="feed" style="position: fixed;
       background: rgba(255, 255, 255, 0.2);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -43,46 +87,49 @@ linear-gradient(336deg, #8ADDF8, rgba(0, 0, 255, 0) 70.71%);">
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </div>
-  <div class="container__fixed">
-    <div class="card">
-      <!--inicio tarjeta-->
-      <div class="card__banner"></div>
-      <div class="card__profile" >
-        <img class="card__image" src="../media/pfp.png" alt="profile image" />
-        <button class="card__button" type="button">Check my CV</button>
-        <h1 class="card__title">Ibrahim Calzadilla Rada</h1>
-        <h2 class="card__role">
-          <i class="fa-solid fa-suitcase" style="color: #53646e"></i> Jr.
-          Frontend Developer
-        </h2>
-        <div class="card__languages">
-          <small>HTML |</small>
-          <small>CSS |</small>
-          <small>Javascript |</small>
-          <small>Bootstrap |</small>
-          <small>React</small>
-        </div>
-        <div class="card__links">
-          <a href="#"><i class="fa-brands fa-github" style="color: #368dc3"></i>
-            ibrahimhc19</a>
-          <a href="#" class="card__email"><i class="fa-solid fa-envelope" style="color: #368dc3"></i>
-            ibrahimhc19@gmail.com</a>
-        </div>
-        <p class="card__bio">
-          Web Development Technician Degree student, actively working towards
-          a career as a Frontend Developer. With a robust foundation in
-          customer service and bilingual logistics coordination, I bring a
-          results-driven focus and exceptional communication skills to the
-          table.
-        </p>
-      </div>
-    </div>
-    <!--fin tarjeta-->
-  </div>
+    </div> -->
+    <div class="container__fixed">
+      <div class="card">
+        <!--inicio tarjeta-->
 
-  <div class="container__scrollable">
-    <!-- <div class="feed">
+        <div class="card__banner"></div>
+        <div class="card__profile">
+          <img class="card__image" src="../media/pfp.png" alt="profile image" />
+          <button class="card__button" type="button">Check my CV</button>
+          <h1 class="card__title">Ibrahim Calzadilla Rada</h1>
+          <h2 class="card__role">
+            <i class="fa-solid fa-suitcase"></i> Jr. Frontend Developer
+          </h2>
+
+          <div class="card__languages">
+            <small>HTML |</small>
+            <small>CSS |</small>
+            <small>Javascript |</small>
+            <small>Bootstrap |</small>
+            <small>React</small>
+          </div>
+
+          <div class="card__links">
+            <a href="#"><i class="fa-brands fa-github"></i> ibrahimhc19</a>
+            <a href="#" class="card__email"
+              ><i class="fa-solid fa-envelope"></i> ibrahimhc19@gmail.com</a
+            >
+          </div>
+
+          <p class="card__bio">
+            Web Development Technician Degree student, actively working towards
+            a career as a Frontend Developer. With a robust foundation in
+            customer service and bilingual logistics coordination, I bring a
+            results-driven focus and exceptional communication skills to the
+            table.
+          </p>
+        </div>
+      </div>
+      <!--fin tarjeta-->
+    </div>
+
+    <div class="container__scrollable">
+      <!-- <div class="feed">
       <nav>
         <ul style="
               display: flex;
@@ -97,144 +144,127 @@ linear-gradient(336deg, #8ADDF8, rgba(0, 0, 255, 0) 70.71%);">
       </nav>
     </div> -->
 
-    <div class="feed">
-      <div class="feed__post">
-        <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image" />
+      <div class="feed">
+        <div class="feed__post">
+          <img
+            class="feed__post--user-image"
+            src="../media/pfp.png"
+            alt="post profile image"
+          />
 
-        <div class="post">
-          <!-- <p class="feed__post--caption"> -->
-          <h2>About Me</h2>
-          <br /><br />
-          Hi there! I'm Ibrahim, a dedicated frontend developer with a strong
-          passion for crafting user-friendly web solutions and experiences.<br /><br />
-          <strong>What I Bring to the Table:</strong> <br />
+          <div class="post">
+            <!-- <p class="feed__post--caption"> -->
 
-          <style>
-            ul li {
-              margin-left: 2rem;
-            }
+            <h2>About Me</h2>
+            Hi there! I'm Ibrahim, a dedicated frontend developer with a strong
+            passion for crafting user-friendly web solutions and experiences.<br /><br />
+            <strong>What I Bring to the Table:</strong> <br />
 
-            ul {
-              text-align: justify;
-            }
+            <ul>
+              <li>
+                <strong>JavaScript Enthusiast: </strong>JavaScript is my default
+                programming language, and I thrive in harnessing its power to
+                craft dynamic and responsive web applications.
+              </li>
+              <br />
 
-            .feed__post {
-              padding-right: 1rem;
-              text-align: justify;
-            }
-          </style>
+              <li>
+                <strong>Continuous Learner: </strong>In this tech game, you've
+                got to stay on your toes. I'm always on the lookout for the
+                latest trends, and I love tinkering with new design ideas. I try
+                to always keep up with the industry.
+              </li>
+              <br />
 
-          <ul>
-            <li>
-              <strong>JavaScript Enthusiast: </strong>JavaScript is my default
-              programming language, and I thrive in harnessing its power to
-              craft dynamic and responsive web applications.
-            </li>
-            <br />
+              <li>
+                <strong>Problem Solver: </strong>As an accounting clerk in a
+                logistics company, I've honed my analytical and problem-solving
+                abilities. I apply these skills to find elegant solutions to
+                complex frontend challenges.
+              </li>
+              <br />
+            </ul>
 
-            <li>
-              <strong>Continuous Learner: </strong>In this tech game, you've
-              got to stay on your toes. I'm always on the lookout for the
-              latest trends, and I love tinkering with new design ideas. I try
-              to always keep up with the industry.
-            </li>
-            <br />
-
-            <li>
-              <strong>Problem Solver: </strong>As an accounting clerk in a
-              logistics company, I've honed my analytical and problem-solving
-              abilities. I apply these skills to find elegant solutions to
-              complex frontend challenges.
-            </li>
-            <br />
-          </ul>
-
-          <strong>Let's Connect: </strong>I'm always open to new opportunities
-          and collaborations. Whether you have a project in mind or simply
-          want to discuss coding challenges, concepts or the latest trends in
-          software/web development, feel free to get in touch.
-          <!-- </p> -->
+            <strong>Let's Connect: </strong>I'm always open to new opportunities
+            and collaborations. Whether you have a project in mind or simply
+            want to discuss coding challenges, concepts or the latest trends in
+            software/web development, feel free to get in touch.
+            <!-- </p> -->
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="feed">
-      <div class="feed__post">
-        <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image" />
+      <div class="feed">
+        <div class="feed__post">
+          <img
+            class="feed__post--user-image"
+            src="../media/pfp.png"
+            alt="post profile image"
+          />
 
-        <div class="post">
-          <div class="evaluacion">
-            <div class="acerca">
-              <h2>Sobre esta página</h2>
-              <br />
+          <div class="post">
+            <div class="evaluacion">
+              <div class="acerca">
+                <h2>Sobre esta página</h2>
+                <br />
 
-              <p>
-                Esta es una página creada con la intención de agregar mejoras
-                a lo que fue mi Primera Asignación del módulo HTML como parte
-                de mi formación como Técnico Auxiliar en Desarrollo Web en el
-                Centro de Sistemas de Antioquia (CENSA) en el 2023.
-              </p>
-              <br />
-            </div>
+                <p>
+                  Esta es una página creada con la intención de agregar mejoras
+                  a lo que fue mi Primera Asignación del módulo HTML como parte
+                  de mi formación como Técnico Auxiliar en Desarrollo Web en el
+                  Centro de Sistemas de Antioquia (CENSA) en el 2023.
+                </p>
+                <br />
+              </div>
 
-            <div class="asignacion">
-              <h2>Primera Asignación HTML</h2>
-              <br />
+              <div class="asignacion">
+                <h2>Primera Asignación HTML</h2>
 
-              <p class="criterios">
-                A continuación encuentras los instrucciones y criterios a
-                evaluar:
-              </p>
-              <br />
-              <p>
-                Vas a realizar una página web, con el concepto que quieras,
-                pero esta debe incluir:
-              </p>
-              <br />
-              <!-- Comienzo lista -->
+                <p class="criterios">
+                  A continuación encuentras los instrucciones y criterios a
+                  evaluar:
+                </p>
+                <p>
+                  Vas a realizar una página web, con el concepto que quieras,
+                  pero esta debe incluir:
+                </p>
 
-              <style>
-                ol li {
-                  margin: 0.5rem 2rem;
-                }
-              </style>
-
-              <ol>
-                <li>Al menos 3 titulos diferentes.</li>
-                <li>
-                  Al menos 2 referencias a paginas web distintas dentro de
-                  alguno de los textos.
-                </li>
-                <li>
-                  Al menos dos imagenes distribuidas a lo largo del texto.
-                </li>
-                <li>
-                  Un marco con la ubicacion de su lugar favorito en el mundo.
-                </li>
-                <li>
-                  Un video que con sus respectivos controles y que tenga
-                  configurado un tiempo de inicio y si quiere uno de final.
-                </li>
-                <li>
-                  En algun lugar de la pagina debe haber una referencia a una
-                  de las imágenes o el video.
-                </li>
-                <li>
-                  La pagina puede tener todo lo que usted quiera, pero como
-                  mínimo las seis cosas mencionadas antes.
-                </li>
-              </ol>
-              <!-- Fin lista -->
-              <p>
-                Todo lo anterior teniendo en cuenta que solo se evaluaría HTML
-                puro, sin aplicación de hojas de estilos
-              </p>
+                <!-- Comienzo lista -->
+                <ol>
+                  <li>Al menos 3 titulos diferentes.</li>
+                  <li>
+                    Al menos 2 referencias a paginas web distintas dentro de
+                    alguno de los textos.
+                  </li>
+                  <li>
+                    Al menos dos imagenes distribuidas a lo largo del texto.
+                  </li>
+                  <li>
+                    Un marco con la ubicacion de su lugar favorito en el mundo.
+                  </li>
+                  <li>
+                    Un video que con sus respectivos controles y que tenga
+                    configurado un tiempo de inicio y si quiere uno de final.
+                  </li>
+                  <li>
+                    En algun lugar de la pagina debe haber una referencia a una
+                    de las imágenes o el video.
+                  </li>
+                  <li>
+                    La pagina puede tener todo lo que usted quiera, pero como
+                    mínimo las seis cosas mencionadas antes.
+                  </li>
+                </ol>
+                <!-- Fin lista -->
+                <p>
+                  Todo lo anterior teniendo en cuenta que solo se evaluaría HTML
+                  puro, sin aplicación de hojas de estilos
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

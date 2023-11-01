@@ -1,225 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Ubuntu:wght@300;400&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
+  color: black;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Ubuntu", sans-serif;
 }
 
-:root{
-  --altura: 7vh;
+:root {
+  --border: 1rem;
+  --mb-elements: 1vh;
+  --bgc-elements: #ffffff;
+  --shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.205);
 }
 
-body{
-  height: 100vh;
-  background-color: #edeceeab;
-  /* background-color: #E5E1E1; */
-  /* background-color: #eaf2fd; */
-}
-
-.nav-bar{
+body {
+  /* width: 90vw; */
   display: flex;
-  align-items: center;
-  height: var(--altura);
-  justify-content: space-around;
-  background-color: #cce0fda2;
-  box-shadow: 0 .4rem 2rem rgba(0, 0, 0, 0.1);
-
+  flex-direction: column;
+  /* margin: 0 auto; */
+  /* background-color: #fbfbfb; */
+  /* justify-content: center; */
+  /* background-color: #368dc33f; */
+  background: linear-gradient(217deg, #f1b6e0, rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, #b3b0f8, rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, #8addf8, rgba(0, 0, 255, 0) 70.71%);
+  background-attachment: fixed;
 }
 
-.left h1{
-  font-size: 1.5rem;
-  user-select: none;
-  font-weight: bolder;
-  letter-spacing: 1px;
-}
 
-.list{
-  display: flex;
-  user-select: none;
-  list-style: none;
-}
-
-.list li a{
-  cursor: pointer;
-  font-size: 1.2rem;
-  transition: all 1s;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  font-weight: normal;
-  padding: 0.4rem 0.8rem;
-}
-
-#pfp{
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50%;
-  transition: all 1s;
-  border: 3px solid white;
-}
-#pfp:hover{
-  transform: scale(.8);
-} 
-
-.hero{
-  height: 93vh;
-  display: flex;
+/* nav{
+  height: 8vh;
+  background: red;
+} */
+.container {
+  max-width: 768px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-around;
 }
 
-.imagenHero{
-  width: 40vw;
-  height: 300px;
-  align-self: center;
+ol li {
+  margin: 0.5rem 2rem;
 }
-.hero div{
+
+.feed {
+  height: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem 2rem;
+  box-shadow: var(--shadow);
+  background: var(--bgc-elements);
+}
+
+.feed__post {
   display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 
-.presentacion{
-  width: 40vw;
-  padding: 2rem;
-  flex-direction: column;
-}
-.nombre{
-  font-size: 2.5rem;
+.feed__post--user-image {
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
 }
 
-.presentacion p{
-  margin: .2rem 0;
-  font-size: 1.4rem;
+.feed__post--caption {
+  margin-bottom: 0.5rem;
 }
 
-main{
-  margin: 0 auto;
-  background-color: #cce0fda2;
+.feed__post--thumbnail {
+  border-radius: var(--border);
 }
 
-.evaluacion{
-  width: 80vw;
-  display: flex;
-  margin: 0 auto;
-  align-items: baseline;
-
-}
-
-.acerca{
-  width: 40vw;
-  padding: 2rem;
-  text-align: center;
-}
-.acerca p, .criterios{
-  text-indent: 2rem;
-  text-align: justify;
-  line-height: 1.5rem;
-}
-.asignacion{
-  width: 40vw;
-  padding: 2rem;
-  text-align: justify;
-}
-
-.asignacion h2{
-  text-align: center;
-}
-.asignacion li{
-  margin-bottom: .8rem;
-}
-ol li{
-  margin-left: 2.5rem;
-}
-.asignacion h2, p{
-  margin: 1rem 0;
-}
-
-.prueba{
-  display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-}
-
-.prueba h1,h2,h3,p {
-  margin: 1rem 0;
-}
-
-.prueba h1{
-  background-color: rgba(162, 0, 255, 0.404);
-  width: 100%;
-  text-align: center;
-  margin-top: 0;
-  padding: 2rem 0;
-}
-.prueba div{
-  width: 80vw;
-  display: flex;
-  padding: 2rem;
-  flex-direction: column;
-}
-
-.inicio, .coursera{
-  width: 80vw;
-}
-
-
-
-@media screen and (max-width: 767px) {
-  .evaluacion{
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 639px) {
+  .feed {
+    margin: 1rem 1rem;
   }
-  .acerca{
-    width: 80vw;
-    padding-bottom: 0;
-  }
-  .asignacion{
-    width: 80vw;
-    padding-top: 0;
-  }
-  video{
-    width: 80vw;
-  }
-  main p{
-    font-size: 1.3rem;
-  }
-  .hero div{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .presentacion{
-    width: 90vw;
-    text-align: center;
-    padding: 0;
-  }
-  #pfp{
-    width: 60vw;
-    display: flex;
-    margin: 0 auto;
-  }
-  .prueba__alura--parrafo, .prueba__coursera--parrafo{
-    text-align: justify;
-  }
-  .nombre{
-    margin-bottom: 1rem;
-  }
-  .prueba div{
-    padding: 0 2rem;
-  }
-  .prueba__titulo{
-    width: 80vw;
-  }
-  .list{
-    display: none;
-  }
-  .nav-bar{
-    justify-content: center;
-  }
-
 }
