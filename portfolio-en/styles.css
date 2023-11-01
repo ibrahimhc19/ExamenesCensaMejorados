@@ -90,10 +90,10 @@ body {
   font-size: 1rem;
 }
 
-.container__scrollable {
+/* .container__scrollable {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .feed {
   height: auto;
