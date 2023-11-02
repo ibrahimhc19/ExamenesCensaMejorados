@@ -8,9 +8,12 @@
       content="Ibrahim Calzadilla's Frontend Development Portfolio"
     />
     <meta name="keywords" content="HTML, CSS, JavaScript, React" />
-    <meta name="theme-color" content="linear-gradient(217deg, #f1b6e0, rgba(255, 0, 0, 0) 70.71%),
+    <meta
+      name="theme-color"
+      content="linear-gradient(217deg, #f1b6e0, rgba(255, 0, 0, 0) 70.71%),
     linear-gradient(127deg, #b3b0f8, rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, #8addf8, rgba(0, 0, 255, 0) 70.71%)" />
+    linear-gradient(336deg, #8addf8, rgba(0, 0, 255, 0) 70.71%)"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
     <link
@@ -36,9 +39,7 @@
   <body>
     <div class="container">
       <header>
-        <nav>
-
-        </nav>
+        <nav></nav>
       </header>
 
       <div class="feed">
@@ -60,7 +61,6 @@
                   de mi formación como Técnico Auxiliar en Desarrollo Web en el
                   Centro de Sistemas de Antioquia (CENSA) en el 2023.
                 </p>
-                
               </div>
             </div>
           </div>
@@ -92,8 +92,8 @@
 
                 <!-- Comienzo lista -->
                 <ol>
-                  <li>Al menos 3 titulos diferentes.</li>
-                  <li>
+                  <li id="01">Al menos 3 titulos diferentes.</li>
+                  <li id="02">
                     Al menos 2 referencias a paginas web distintas dentro de
                     alguno de los textos.
                   </li>
@@ -127,26 +127,61 @@
         </div>
       </div>
 
-      <div class="feed">
-        <div class="feed__post">
-          <!-- <img class="feed__post--user-image" src="../media/pfp.png" alt="post profile image" /> -->
 
-          <div class="post">
-            <div class="evaluacion">
-              <div class="acerca">
-                <h2>Sobre esta página</h2>
-                <p>
-                  Esta es una página creada con la intención de agregar mejoras
-                  a lo que fue mi Primera Asignación del módulo HTML como parte
-                  de mi formación como Técnico Auxiliar en Desarrollo Web en el
-                  Centro de Sistemas de Antioquia (CENSA) en el 2023.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="feed">
+        <h1>
+          Mi Cuenta github <sup><a href="#01">[1]</a></sup>
+        </h1>
+        <p>
+          Este <a href="https://github.com/ibrahimhc19" target="_blank">enlace</a> te lleva a mi cuenta
+          Github. No encontraras mcucha actividad allí (por ahora).<sup><a href="#">[2]</a></sup> 
+        </p>
       </div>
-    </div>
+
+      <div class="feed" style="display: flex; flex-direction: column;">
+          <h2>
+            Asignacion Coursera <sup> <a href="#01">[1]</a> </sup>
+          </h2>
+          <p>
+            Este <a href="#" target="_blank">enlace</a> te lleva a la primera
+            asignacion de un curso que estuve haciendo en Coursera. Es una
+            página web simple pero responsive, tiene tres vistas: desktop,
+            tablet y smartphone.<sup><a href="#">[2]</a></sup>
+          </p>
+          <figure>
+            <figcaption id="desktop" >Vista Desktop</figcaption>
+            <img src="https://github.com/ibrahimhc19/challengeEncriptador/blob/main/imagenes/desktop.png?raw=true">
+          </figure>
+          <figure>
+            <figcaption id="tablet" >Vista Tablet</figcaption>
+            <img src="https://github.com/ibrahimhc19/challengeEncriptador/blob/main/imagenes/tablet.png?raw=true" style="border-radius: 16px;">
+          </figure>
+          <figure>
+            <figcaption id="smartphone" >Vista Smartphone</figcaption>
+            <img src="https://github.com/ibrahimhc19/challengeEncriptador/blob/main/imagenes/smartphone.png?raw=true" style="border-radius: 16px;">
+          </figure>
+      </div>
+
+      <div class="feed">
+        <h3>Parque Nacional El Ávila (Waraira Repano)</h3>
+        <p>Allá solía hacer senderismo los fines de semana en mi amada Caracas</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15691.191899944322!2d-66.8578704!3d10.5165724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a59750ed756d5%3A0xf2aa992ff676d594!2sParque%20Nacional%20El%20%C3%81vila%20(Waraira%20Repano)!5e0!3m2!1ses!2sco!4v1689515842269!5m2!1ses!2sco"></iframe>
+      </div>
+
+      <div class="feed">
+        <h3>Video que me recuerda la carrera que estudié y no ejerzo</h3>
+          <video width="600px" preload controls autoplay muted>
+              <source src="https://player.vimeo.com/video/172490363?h=2199f1e56d#t=30">
+              <source src="./airport.mp4#t=30">
+          </video>
+        </div>
+
+        <div class="feed">
+          <a href="#inicio">Volver a arriba</a>
+        </div>
+
+      
+      
   </body>
 
   <!-- <div class="feed">

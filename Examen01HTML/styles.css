@@ -30,7 +30,18 @@ body {
   background-attachment: fixed;
 }
 
+a , sup {
+  color: #368dc3;
+}
 
+video{
+  max-width: 100%;
+}
+
+img{
+  max-width: 100%;
+  margin: 0 auto;
+}
 /* nav{
   height: 8vh;
   background: red;
